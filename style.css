@@ -1,5 +1,66 @@
+:root {
+  --background: #A5B4C4;
+  --background-darker: #84909E;
+  --background-highlight: #C5D7EB;
+  --font: #33383D;
+}
+
+html, body {
+  color: var(--font);
+  background: var(--background);
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
 section {
-  width: 500px;
-  height: 500px;
-  background: red;
+  border-radius: 10px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+h5 {
+  margin-top: 5px;
+}
+
+.card-wrapper, .card {
+  transition: 1s ease;
+}
+
+.card-wrapper {
+  background: var(--background);
+  width: 520px;
+  height: 520px;
+  box-shadow: 0px 0px 0px 0px inset var(--background);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  left-padding: 55px;
+  box-shadow: 0px 0px 0px 0px inset var(--background);
+}
+
+.card-wrapper:hover {
+  box-shadow: 8px 8px 22px 5px inset var(--background-darker);
+}
+
+.card:hover {
+  box-shadow: -8px -8px 16px -5px inset var(--background-highlight);
 }
